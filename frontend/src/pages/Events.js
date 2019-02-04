@@ -52,7 +52,6 @@ class EventsPage extends Component {
     }
 
     const event = {title, price, date, description};
-    // console.log(event)
 
     const requestBody = {
       query: `
@@ -202,7 +201,6 @@ class EventsPage extends Component {
         return res.json();
       })
       .then(resData => {
-        console.log(resData)
         this.setState({
           selectedEvent: null
         })

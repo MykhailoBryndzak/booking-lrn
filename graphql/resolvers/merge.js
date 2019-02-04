@@ -3,7 +3,6 @@ const Event = require('../../models/event');
 const {dateToString} = require('../../helpers/date');
 
 const transformBooking = booking => {
-  console.log(booking._doc)
   return {
     ...booking._doc,
     _id: booking.id,
@@ -62,4 +61,4 @@ exports.transformEvent = transformEvent;
 // exports.user = user;
 // exports.events = events;
 // exports.singleEvent = singleEvent;
- 
+
